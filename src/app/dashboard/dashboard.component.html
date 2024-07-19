@@ -1,0 +1,19 @@
+
+
+
+<div class="container">
+  <h1>Ask the Magic 8 Ball!</h1>
+
+  <div class="ball">
+    <span class="curved-text">Magic 8 Ball</span>
+    <input type="text" class="typewriter" [(ngModel)]="question" placeholder="Seek and you shall find your answer...">
+    <button (click)="getAnswer()">Enter</button>
+  </div>
+  <div *ngIf="showAnswer" class="box">
+    <p>{{ answer }}</p>
+  </div>
+</div>
+
+
+
+
